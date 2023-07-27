@@ -1,4 +1,7 @@
 {
-  "baseChain": "goerli",
-  "globalSupply" : "1000000"
+  "NFTEarthOFT": {
+      "tokenName": "NFTEarthOFT",
+      "tokenSymbol": "ONFTE",
+      "sharedDecimals": "8"
+  }
 }

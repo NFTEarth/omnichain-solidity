@@ -8,15 +8,16 @@ module.exports = async function ({ deployments, getNamedAccounts }) {
 
     const lzEndpointAddress = LZ_ENDPOINTS[hre.network.name]
     console.log(`[${hre.network.name}] Endpoint Address: ${lzEndpointAddress}`)
-    const globalSupply = ethers.utils.parseUnits("1000000", 18)
-    const sharedDecimals = 6;
+    const tokenName = "NFTEarthOFT"
+    const tokenSymbol = "NFTE"
+    const sharedDecimals = 8;
 
-    await deploy("ExampleOFTV2", {
+    await deploy("NFTEarthOFT", {
         from: deployer,
-        args: [lzEndpointAddress, globalSupply, sharedDecimals],
+        args: [tokenName, tokenSymbol, sharedDecimals, lzEndpointAddress],
         log: true,
         waitConfirmations: 1,
     })
 }
 
-module.exports.tags = ["ExampleOFTV2"]
+module.exports.tags = ["NFTEarthOFT"]

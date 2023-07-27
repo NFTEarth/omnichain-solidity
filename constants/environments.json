@@ -1,12 +1,10 @@
 {
   "mainnet": [
-    "ethereum",
     "bsc",
     "avalanche",
     "polygon",
     "arbitrum",
-    "optimism",
-    "fantom"
+    "optimism"
   ],
   "testnet": [
     "goerli",
@@ -15,6 +13,9 @@
     "mumbai",
     "arbitrum-goerli",
     "optimism-goerli",
-    "fantom-testnet"
+    "fantom-testnet",
+    "base-testnet",
+    "linea-testnet",
+    "mantle-testnet"
   ]
 }

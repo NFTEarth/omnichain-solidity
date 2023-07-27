@@ -114,22 +114,22 @@ module.exports = {
       accounts: accounts(),
     },
     avalanche: {
-      url: "https://api.avax.network/ext/bc/C/rpc",
+      url: "https://avalanche-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75",
       chainId: 43114,
       accounts: accounts(),
     },
     polygon: {
-      url: "https://rpc-mainnet.maticvigil.com",
+      url: "https://polygon-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75",
       chainId: 137,
       accounts: accounts(),
     },
     arbitrum: {
-      url: `https://arb1.arbitrum.io/rpc`,
+      url: `https://arbitrum-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75`,
       chainId: 42161,
       accounts: accounts(),
     },
     optimism: {
-      url: `https://mainnet.optimism.io`,
+      url: `https://optimism-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75`,
       chainId: 10,
       accounts: accounts(),
     },
@@ -138,12 +138,16 @@ module.exports = {
       chainId: 250,
       accounts: accounts(),
     },
-    metis: {
-      url: `https://andromeda.metis.io/?owner=1088`,
-      chainId: 1088,
+    linea: {
+      url: `https://linea-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75`,
+      chainId: 59144,
       accounts: accounts(),
     },
-
+      base: { 
+        url: `https://developer-access-mainnet.base.org`,
+        chainId: 8453,
+        accounts: accounts(),
+    },
     goerli: {
       url: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", // public infura endpoint
       chainId: 5,
@@ -178,6 +182,16 @@ module.exports = {
       url: `https://rpc.ankr.com/fantom_testnet`,
       chainId: 4002,
       accounts: accounts(),
+    },
+    linea: {
+      url: `https://rpc.goerli.linea.build`,
+      chainId: 59140,
+      accounts: accounts(),
+    },
+    'base-gorli': { 
+        url: `https://goerli.base.org`,
+        chainId: 84531,
+        accounts: accounts(),
     }
   }
 };
