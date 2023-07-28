@@ -45,7 +45,7 @@ module.exports = async function (taskArgs, hre) {
             { value: fees[0] }
         )
     ).wait()
-    console.log(`✅ Message Sent [${hre.network.name}] sendTokens() to OFT @ LZ chainId[${remoteChainId}] token:[${toAddress}]`)
+    console.log(`✅ Message Sent [${hre.network.name}] sendTokens() to OFT @ LayerZero chainId[${remoteChainId}] token:[${toAddress}]`)
     console.log(` tx: ${tx.transactionHash}`)
-    console.log(`* check your address [${owner.address}] on the destination chain, in the ERC20 transaction tab !"`)
+    console.log(`* check your address [${owner.address}] on the destination chain, in the ERC20 Txs tab you web3 Omnichain crypto wizard !"`)
 }
