@@ -1,14 +1,18 @@
 {
-  "bsc-testnet": {
+  "arbitrum-goerli": {
     "startMintId": 1,
     "endMintId": 10
   },
   "fuji": {
     "startMintId": 11,
-    "endMintId": 20
+    "endMintId": 15
   },
-  "goerli": {
+  "optimism-goerli": {
+    "startMintId": 16,
+    "endMintId": 21
+  },
+  "bsc-testnet": {
     "startMintId": 21,
-    "endMintId": 30
+    "endMintId": 25
   }
 }

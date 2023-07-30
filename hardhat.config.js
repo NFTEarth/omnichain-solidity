@@ -81,6 +81,38 @@ module.exports = {
 
 
   },
+  etherscan: {
+    apiKey: {
+        mainnet: "XKCSEX4ETYNRI4A9XPNQF5DB4C5V6E92GV",
+        optimisticEthereum: "YOUR_OPTIMISTIC_ETHERSCAN_API_KEY",
+        arbitrumOne: "YOUR_ARBISCAN_API_KEY",
+        "base-goerli": "PLACEHOLDER_STRING",
+        "base": "8JDR755K9FZG6P889AGR1ABSPG35D8I5KU",
+        linea: "H28X7C3ICUWERGTNXV8CJ5P54923FCBQHT"
+    },
+    customChains: [
+      {
+        network: "base-goerli",
+        chainId: 84531,
+        urls: {
+          apiURL: "https://api-goerli.basescan.org/api",
+          browserURL: 	"https://goerli.basescan.org",
+        },
+        network: "base",
+        chainId: 8453,
+        urls: {
+          apiURL: "https://api.basescan.org/api",
+          browserURL: "https://basescan.org/",
+        },
+        network: "linea",
+        chainId: 59144,
+        urls: {
+          apiURL: "https://api.lineascan.build/api",
+          browserURL: "https://lineascan.build",
+        },
+      }
+    ]
+  },
 
   // solidity: "0.8.4",
   contractSizer: {
@@ -143,10 +175,10 @@ module.exports = {
       chainId: 59144,
       accounts: accounts(),
     },
-      base: { 
-        url: `https://developer-access-mainnet.base.org`,
-        chainId: 8453,
-        accounts: accounts(),
+    base: { 
+      url: `https://developer-access-mainnet.base.org`,
+      chainId: 8453,
+      accounts: accounts(),
     },
     goerli: {
       url: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", // public infura endpoint
@@ -181,11 +213,6 @@ module.exports = {
     'fantom-testnet': {
       url: `https://rpc.ankr.com/fantom_testnet`,
       chainId: 4002,
-      accounts: accounts(),
-    },
-    linea: {
-      url: `https://rpc.goerli.linea.build`,
-      chainId: 59140,
       accounts: accounts(),
     },
     'base-gorli': { 
