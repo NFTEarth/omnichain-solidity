@@ -4,7 +4,9 @@
     "avalanche",
     "polygon",
     "arbitrum",
-    "optimism"
+    "optimism",
+    "linea",
+    "base"
   ],
   "testnet": [
     "goerli",
