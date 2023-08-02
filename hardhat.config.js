@@ -219,6 +219,16 @@ module.exports = {
         url: `https://goerli.base.org`,
         chainId: 84531,
         accounts: accounts(),
-    }
+    },
+    'mantle': { 
+    url: `https://rpc.ankr.com/mantle`,
+    chainId: 5000,
+    accounts: accounts(),
+   },
+   'mantle-testnet': { 
+    url: `https://rpc.ankr.com/mantle_testnet`,
+    chainId: 5001,
+    accounts: accounts(),
+  },
   }
 };

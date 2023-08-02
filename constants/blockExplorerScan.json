@@ -19,5 +19,7 @@
   "OPTIMISM": "https://api-optimistic.etherscan.io/api",
   "POLYGON": "https://api.polygonscan.com/api",
   "POLYGON_TESTNET": "https://api-testnet.polygonscan.com/api",
-  "SWIMMER": ""
+  "SWIMMER": "",
+  "MANTLE_TESTNET": "https://explorer.testnet.mantle.xyz/api",
+  "MANTLE": "https://explorer.testnet.mantle.xyz/api"
 }

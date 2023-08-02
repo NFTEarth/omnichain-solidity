@@ -6,7 +6,8 @@
     "arbitrum",
     "optimism",
     "linea",
-    "base"
+    "base",
+    "mantle"
   ],
   "testnet": [
     "goerli",
