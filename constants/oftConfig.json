@@ -1,7 +1,7 @@
 {
   "NFTEarthOFT": {
       "tokenName": "NFTEarthOFT",
-      "tokenSymbol": "ONFTE",
+      "tokenSymbol": "NFTE",
       "sharedDecimals": "8"
   }
 }

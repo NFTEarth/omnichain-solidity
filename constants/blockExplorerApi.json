@@ -15,6 +15,12 @@
   "optimism-goerli": "https://api-goerli-optimistic.etherscan.io/api",
   "mantle": "https://explorer.mantle.xyz/api",
   "mantle-testnet": "https://explorer.testnet.mantle.xyz/",
+  "arbitrum-nova": "https://api-nova.arbiscan.io/api",
+  "zkEVM": "https://api-zkevm.polygonscan.com/api",
+  "scroll": "https://api.scrollscan.com/api",
+  "coredao": "https://openapi.coredao.org/api",
+  "linea": "https://api.lineascan.build/api",
+  "base": "https://api.basescan.org/api",
 
 
   "aptos": "",

@@ -9,6 +9,10 @@
   "linea":            183,
   "base":             184,
   "mantle":           181,
+  "nova":             175,
+  "zkEVM":            158,
+  "scroll":           214,
+  "coredao":          153,
 
   "goerli":           10121,
   "bsc-testnet":      10102,
@@ -21,5 +25,6 @@
   "zksync-testnet":   10165,
   "mantle-testnet":   10181,
   "base-testnet":     10160,
-  "linea-testnet":    10157
+  "linea-testnet":    10157,
+  "coredao-testnet":  10153
 }

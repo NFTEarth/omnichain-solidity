@@ -21,5 +21,11 @@
   "POLYGON_TESTNET": "https://api-testnet.polygonscan.com/api",
   "SWIMMER": "",
   "MANTLE_TESTNET": "https://explorer.testnet.mantle.xyz/api",
-  "MANTLE": "https://explorer.testnet.mantle.xyz/api"
+  "MANTLE": "https://explorer.testnet.mantle.xyz/api",
+  "ARBITRUM_NOVA": "https://nova.arbiscan.io/",
+  "POLYGON_ZKEVM": "https://zkevm.polygonscan.com/",
+  "SCROLL": "https://api.scrollscan.com/api",
+  "COREDAO": "https://openapi.coredao.org/api",
+  "LINEA": "https://api.lineascan.build/api",
+  "BASE": "https://api.basescan.org/api"
 }

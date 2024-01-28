@@ -1,5 +1,4 @@
 require("dotenv").config();
-
 require('hardhat-contract-sizer');
 require("@nomiclabs/hardhat-waffle");
 require(`@nomiclabs/hardhat-etherscan`);
@@ -69,6 +68,24 @@ module.exports = {
         }
       },
       {
+        version: "0.8.9",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200
+          }
+        }
+      },
+      {
+        version: "0.8.17",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200
+          }
+        }
+      },
+      {
         version: "0.8.12",
         settings: {
           optimizer: {
@@ -83,12 +100,10 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-        mainnet: "XKCSEX4ETYNRI4A9XPNQF5DB4C5V6E92GV",
-        optimisticEthereum: "YOUR_OPTIMISTIC_ETHERSCAN_API_KEY",
-        arbitrumOne: "YOUR_ARBISCAN_API_KEY",
-        "base-goerli": "PLACEHOLDER_STRING",
-        "base": "8JDR755K9FZG6P889AGR1ABSPG35D8I5KU",
-        linea: "H28X7C3ICUWERGTNXV8CJ5P54923FCBQHT"
+      optimisticEthereum: "YOUR_OPTIMISTIC_ETHERSCAN_API_KEY",
+      "base-goerli": "PLACEHOLDER_STRING",
+        
+       
     },
     customChains: [
       {
@@ -109,6 +124,18 @@ module.exports = {
         urls: {
           apiURL: "https://api.lineascan.build/api",
           browserURL: "https://lineascan.build",
+        },
+        network: "arbitrum-nova",
+        chainId: 42170,
+        urls: {
+          apiURL: "https://api-nova.arbiscan.io/api",
+          browserURL: "https://nova.arbiscan.io/",
+        },
+        network: "zkevm",
+        chainId: 1101,
+        urls: {
+          apiURL: "https://api-zkevm.polygonscan.com/api",
+          browserURL: "https://zkevm.polygonscan.com",
         },
       }
     ]
@@ -136,7 +163,7 @@ module.exports = {
 
   networks: {
     ethereum: {
-      url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", // public infura endpoint
+      url: "https://mainnet.infura.io/v3", // public infura endpoint
       chainId: 1,
       accounts: accounts(),
     },
@@ -145,23 +172,28 @@ module.exports = {
       chainId: 56,
       accounts: accounts(),
     },
+    nova: {
+      url: "https://arbitrum-nova.public.blastapi.io",
+      chainId: 42170,
+      accounts: accounts(),
+    },
     avalanche: {
-      url: "https://avalanche-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75",
+      url: "https://avalanche-mainnet.infura.io/v3",
       chainId: 43114,
       accounts: accounts(),
     },
     polygon: {
-      url: "https://polygon-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75",
+      url: "https://polygon-mainnet.infura.io/v3",
       chainId: 137,
       accounts: accounts(),
     },
     arbitrum: {
-      url: `https://arbitrum-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75`,
+      url: `https://arbitrum-mainnet.infura.io/v3`,
       chainId: 42161,
       accounts: accounts(),
     },
     optimism: {
-      url: `https://optimism-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75`,
+      url: `https://optimism-mainnet.infura.io/v3`,
       chainId: 10,
       accounts: accounts(),
     },
@@ -171,7 +203,7 @@ module.exports = {
       accounts: accounts(),
     },
     linea: {
-      url: `https://linea-mainnet.infura.io/v3/e2a4268d58754f3fac20570df0f99c75`,
+      url: `https://linea-mainnet.infura.io/v3`,
       chainId: 59144,
       accounts: accounts(),
     },
@@ -180,8 +212,28 @@ module.exports = {
       chainId: 8453,
       accounts: accounts(),
     },
+    zkEVM: {
+      url: `https://zkevm-rpc.com`,
+      chainId: 1101,
+      accounts: accounts(),
+    },
+    scroll: {
+      url: `https://1rpc.io/scroll`,
+      chainId: 534352,
+      accounts: accounts(),
+    },
+      coredao: {
+      url: `https://rpc.coredao.org`,
+      chainId: 1116,
+      accounts: accounts(),
+      },
+      'coredao-testnet': {
+      url: 'https://rpc.test.btcs.network/',
+      chainId: 1115,
+      accounts: accounts(),
+    },
     goerli: {
-      url: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", // public infura endpoint
+      url: "https://goerli.infura.io/v3", // public infura endpoint
       chainId: 5,
       accounts: accounts(),
     },

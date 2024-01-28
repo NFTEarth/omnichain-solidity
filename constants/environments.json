@@ -1,14 +1,19 @@
 {
   "mainnet": [
-    "bsc",
-    "avalanche",
     "polygon",
     "arbitrum",
     "optimism",
-    "linea",
     "base",
+    "ethereum",
+    "linea",
+    "zkEVM",
+    "fantom",
     "mantle",
-    "ethereum"
+    "bsc",
+    "avalanche",
+    "nova",
+    "scroll",
+    "coredao"
   ],
   "testnet": [
     "goerli",
